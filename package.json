@@ -1,0 +1,37 @@
+{
+  "name": "bbn-tt",
+  "description": "bbn-tt",
+  "version": "0.0.0",
+  "author": {
+    "name": "bouzuya",
+    "email": "m@bouzuya.net",
+    "url": "http://bouzuya.net"
+  },
+  "bin": {
+    "bbn-tt": "./bin/bbn-tt"
+  },
+  "bugs": {
+    "url": "https://github.com/bouzuya/bbn-tt/issues"
+  },
+  "dependencies": {
+    "twitter": "1.2.5"
+  },
+  "devDependencies": {
+    "tsd": "^0.6.5",
+    "typescript": "^1.7.5"
+  },
+  "homepage": "https://github.com/bouzuya/bbn-tt#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bouzuya/bbn-tt"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf lib/",
+    "postinstall": "tsd reinstall",
+    "start": "npm run clean && npm run build && node lib/index.js"
+  }
+}
