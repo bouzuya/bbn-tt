@@ -2,7 +2,7 @@
   "compilerOptions": {
     "declaration": false,
     "module": "commonjs",
-    "outDir": "lib",
+    "outDir": "tmp",
     "target": "es6"
   },
   "files": [
