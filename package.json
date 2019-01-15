@@ -25,6 +25,10 @@
     "rimraf": "^2.6.3",
     "typescript": "^3.2.2"
   },
+  "files": [
+    "lib",
+    "bin"
+  ],
   "homepage": "https://github.com/bouzuya/bbn-tt#readme",
   "keywords": [],
   "license": "MIT",
