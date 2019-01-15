@@ -1,4 +1,4 @@
-import Twitter from 'twitter';
+import * as Twitter from 'twitter';
 
 export default function main() {
   const status = process.argv[2]
