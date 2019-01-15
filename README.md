@@ -4,18 +4,18 @@ bbn-tt
 
 ## Installation
 
-```
-$ npm install -g bouzuya/bbn-tt
+```bash
+npm install -g @bouzuya/bbn-tt
 ```
 
 ## Usage
 
-```
-$ export BBN_TT_CONSUMER_KEY='...'
-$ export BBN_TT_CONSUMER_SECRET='...'
-$ export BBN_TT_ACCESS_TOKEN='...'
-$ export BBN_TT_ACCESS_TOKEN_SECRET='...'
-$ bbn-tt 'Hello, Twitter!'
+```bash
+export BBN_TT_CONSUMER_KEY='...'
+export BBN_TT_CONSUMER_SECRET='...'
+export BBN_TT_ACCESS_TOKEN='...'
+export BBN_TT_ACCESS_TOKEN_SECRET='...'
+bbn-tt 'Hello, Twitter!'
 ```
 
 ## License
