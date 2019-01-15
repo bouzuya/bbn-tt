@@ -19,6 +19,8 @@
   "devDependencies": {
     "babel-cli": "^6.3.17",
     "babel-preset-es2015": "^6.3.13",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^2.6.3",
     "tsd": "^0.6.5",
     "typescript": "^1.7.5"
   },
@@ -31,9 +33,12 @@
     "url": "https://github.com/bouzuya/bbn-tt"
   },
   "scripts": {
-    "build": "tsc && babel --presets es2015 --out-dir lib/ tmp/",
-    "clean": "rm -rf lib/ tmp/",
+    "build": "npm-run-all -s build:ts build:js",
+    "build:js": "babel --presets es2015 --out-dir lib/ tmp/",
+    "build:ts": "tsc",
+    "clean": "rimraf lib tmp",
     "postinstall": "tsd reinstall",
-    "start": "npm run clean && npm run build && node lib/index.js"
+    "start": "npm-run-all clean build start:js",
+    "start:js": "node lib/index.js"
   }
 }
