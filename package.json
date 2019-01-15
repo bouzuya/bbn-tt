@@ -14,7 +14,7 @@
     "url": "https://github.com/bouzuya/bbn-tt/issues"
   },
   "dependencies": {
-    "twitter": "1.2.5"
+    "twitter": "^1.7.1"
   },
   "devDependencies": {
     "@types/node": "^10.12.18",
