@@ -29,4 +29,3 @@ bbn-tt 'Hello, Twitter!'
 [user]: https://github.com/bouzuya
 [email]: mailto:m@bouzuya.net
 [url]: http://bouzuya.net
-[bouzuya/cars]: https://github.com/bouzuya/cars
