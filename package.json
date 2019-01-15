@@ -39,9 +39,9 @@
   },
   "scripts": {
     "build": "npm-run-all -s build:ts build:js",
-    "build:js": "babel --presets es2015 --out-dir lib/ tmp/",
+    "build:js": "babel --presets es2015 --out-dir lib .tmp",
     "build:ts": "tsc",
-    "clean": "rimraf lib tmp",
+    "clean": "rimraf .tmp lib",
     "start": "npm-run-all clean build start:js",
     "start:js": "node lib/index.js"
   }

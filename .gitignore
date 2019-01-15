@@ -1,4 +1,4 @@
 /.env*
+/.tmp/
 /lib/
 /node_modules/
-/tmp/

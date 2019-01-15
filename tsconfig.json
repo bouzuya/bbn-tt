@@ -2,7 +2,7 @@
   "compilerOptions": {
     "declaration": false,
     "module": "es6",
-    "outDir": "tmp",
+    "outDir": ".tmp",
     "target": "es6"
   },
   "files": [
