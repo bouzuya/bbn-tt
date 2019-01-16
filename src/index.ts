@@ -1,4 +1,4 @@
-import * as Twitter from 'twitter';
+import Twitter from 'twitter';
 
 export default function main() {
   const status = process.argv[2]
@@ -6,6 +6,15 @@ export default function main() {
   const consumerSecret = process.env.BBN_TT_CONSUMER_SECRET;
   const accessTokenKey = process.env.BBN_TT_ACCESS_TOKEN;
   const accessTokenSecret = process.env.BBN_TT_ACCESS_TOKEN_SECRET;
+
+  if (typeof consumerKey === 'undefined')
+    throw new Error('BBN_TT_CONSUMER_KEY is not defined');
+  if (typeof consumerSecret === 'undefined')
+    throw new Error('BBN_TT_CONSUMER_SECRET is not defined');
+  if (typeof accessTokenKey === 'undefined')
+    throw new Error('BBN_TT_ACCESS_TOKEN is not defined');
+  if (typeof accessTokenSecret === 'undefined')
+    throw new Error('BBN_TT_ACCESS_TOKEN_SECRET is not defined');
 
   if (!status) throw new Error('bbn-tt <status>');
 
